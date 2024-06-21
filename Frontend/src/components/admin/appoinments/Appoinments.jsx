@@ -7,7 +7,9 @@ export default function Appoinments() {
     getDoctors();
   }, []);
   async function getDoctors() {
-    const response = await fetch("http://localhost:8080/appoinment");
+    const response = await fetch(
+      "https://doctorsappointment-9ogk.onrender.com/appoinment"
+    );
     const appoinmentResponseData = await response.json();
     console.log("doctorsResponseData", appoinmentResponseData.doctors);
     if (appoinmentResponseData) {

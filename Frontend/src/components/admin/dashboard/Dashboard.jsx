@@ -16,7 +16,9 @@ export default function Dashboard() {
     }
   }, []);
   async function fetchAppointments() {
-    const response = await fetch(`http://localhost:8080/admin/appoinment`);
+    const response = await fetch(
+      `https://doctorsappointment-9ogk.onrender.com/admin/appoinment`
+    );
     const dashboardResponseData = await response.json();
     console.log("dashboardResponseData", dashboardResponseData.appoinments);
     if (dashboardResponseData.appoinments) {
@@ -43,7 +45,7 @@ export default function Dashboard() {
     // setStateData(updatedAppointments);
 
     await postData(
-      `http://localhost:8080/admin/appoinment/confirm`,
+      `https://doctorsappointment-9ogk.onrender.com/admin/appoinment/confirm`,
       updatedAppointments
     ).then((updatedAppointments) => {
       console.log("data", updatedAppointments);

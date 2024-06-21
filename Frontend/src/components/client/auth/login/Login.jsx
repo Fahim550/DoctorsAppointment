@@ -16,7 +16,10 @@ export default function Login() {
     checkingUserInTheDB({ email: data.email, password: data.password });
   };
   const checkingUserInTheDB = async (data) => {
-    await postData("http://localhost:8080/users", data).then((response) => {
+    await postData(
+      "https://doctorsappointment-9ogk.onrender.com/users",
+      data
+    ).then((response) => {
       if (
         response.code == 200 &&
         data.email == "admin123@gmail.com" &&

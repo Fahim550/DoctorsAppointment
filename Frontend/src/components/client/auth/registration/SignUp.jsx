@@ -16,7 +16,10 @@ export default function SignUp() {
     saveUserToDb(data);
   };
   const saveUserToDb = async (data) => {
-    await postData("http://localhost:8080/users", data).then((data) => {
+    await postData(
+      "https://doctorsappointment-9ogk.onrender.com/users",
+      data
+    ).then((data) => {
       console.log("responseData", data); // JSON data parsed by `data.json()` call
       navigate("/login");
     });

@@ -75,7 +75,10 @@ export default function Appoinment() {
     // setAppoinment(bookAppoinment)
   };
   const saveUserToDb = async (data) => {
-    await postData(`http://localhost:8080/appoinments`, data).then((data) => {
+    await postData(
+      `https://doctorsappointment-9ogk.onrender.com/appoinments`,
+      data
+    ).then((data) => {
       console.log("responseData", data);
       navigate("/payment");
     });

@@ -14,7 +14,9 @@ export default function PaymentSection() {
     // console.log("appoinment",appoinment);
   }, []);
   async function getAppoinments() {
-    const response = await fetch(`http://localhost:8080/appoinments`);
+    const response = await fetch(
+      `https://doctorsappointment-9ogk.onrender.com/appoinments`
+    );
     const appoinmetResponseData = await response.json();
     console.log("doctorsResponseData", appoinmetResponseData.appoinments);
     if (appoinmetResponseData.appoinments.length > 0) {

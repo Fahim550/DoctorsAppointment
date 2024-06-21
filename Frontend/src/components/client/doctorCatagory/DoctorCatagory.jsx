@@ -13,7 +13,9 @@ export default function DoctorCatagory() {
     // console.log("service🙌", stateData);
   }, []);
   async function getDoctors() {
-    const response = await fetch(`http://localhost:8080/catagory/${service}`);
+    const response = await fetch(
+      `https://doctorsappointment-9ogk.onrender.com/catagory/${service}`
+    );
     const doctorsResponseData = await response.json();
     console.log("doctorsResponseData", doctorsResponseData.doctors);
     console.log("catagory", catagory);

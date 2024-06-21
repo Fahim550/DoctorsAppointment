@@ -31,7 +31,7 @@ export default function AddDoctors() {
   };
   const saveUserToDb = async (data) => {
     await postData(
-      `http://localhost:8080/catagory/${data.specilities}`,
+      `https://doctorsappointment-9ogk.onrender.com/catagory/${data.specilities}`,
       data
     ).then((data) => {
       console.log("responseData", data); // JSON data parsed by `data.json()` call

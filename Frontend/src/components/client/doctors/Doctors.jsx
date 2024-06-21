@@ -11,19 +11,19 @@ export default function Doctors() {
   }, [stateData]);
   async function getDoctors() {
     const cancerResponse = await fetch(
-      "http://localhost:8080/catagory/Cancer/"
+      "https://doctorsappointment-9ogk.onrender.com/catagory/Cancer/"
     );
     const cancerResponseData = await cancerResponse.json();
     console.log("doctorsResponseData", cancerResponseData.doctors);
 
     const childCareresponse = await fetch(
-      "http://localhost:8080/catagory/Child-Care/"
+      "https://doctorsappointment-9ogk.onrender.com/catagory/Child-Care/"
     );
     const childCareResponseData = await childCareresponse.json();
     console.log("doctorsResponseData", childCareResponseData.doctors);
 
     const generalPhysicianresponse = await fetch(
-      "http://localhost:8080/catagory/General-Physician/"
+      "https://doctorsappointment-9ogk.onrender.com/catagory/General-Physician/"
     );
     const generalPhysicianResponseData = await generalPhysicianresponse.json();
     console.log(
@@ -32,39 +32,43 @@ export default function Doctors() {
     );
 
     const gastroenterologyresponse = await fetch(
-      "http://localhost:8080/catagory/Gastroenterology/"
+      "https://doctorsappointment-9ogk.onrender.com/catagory/Gastroenterology/"
     );
     const gastroenterologyResponseData = await gastroenterologyresponse.json();
     console.log("doctorsResponseData", gastroenterologyResponseData.doctors);
 
     const orthopedicsresponse = await fetch(
-      "http://localhost:8080/catagory/Orthopedics/"
+      "https://doctorsappointment-9ogk.onrender.com/catagory/Orthopedics/"
     );
     const orthopedicsResponseData = await orthopedicsresponse.json();
     console.log("doctorsResponseData", orthopedicsResponseData.doctors);
 
     const psychologyresponse = await fetch(
-      "http://localhost:8080/catagory/Psychology/"
+      "https://doctorsappointment-9ogk.onrender.com/catagory/Psychology/"
     );
     const psychologyResponseData = await psychologyresponse.json();
     console.log("doctorsResponseData", psychologyResponseData.doctors);
 
-    const skinresponse = await fetch("http://localhost:8080/catagory/Skin/");
+    const skinresponse = await fetch(
+      "https://doctorsappointment-9ogk.onrender.com/catagory/Skin/"
+    );
     const skinResponseData = await skinresponse.json();
     console.log("doctorsResponseData", skinResponseData.doctors);
 
-    const gynaeresponse = await fetch("http://localhost:8080/catagory/Gynae/");
+    const gynaeresponse = await fetch(
+      "https://doctorsappointment-9ogk.onrender.com/catagory/Gynae/"
+    );
     const gynaeResponseData = await gynaeresponse.json();
     console.log("doctorsResponseData", gynaeResponseData.doctors);
 
     const kidneyresponse = await fetch(
-      "http://localhost:8080/catagory/Kidney/"
+      "https://doctorsappointment-9ogk.onrender.com/catagory/Kidney/"
     );
     const kidneyResponseData = await kidneyresponse.json();
     console.log("doctorsResponseData", kidneyResponseData.doctors);
 
     const diabetesresponse = await fetch(
-      "http://localhost:8080/catagory/Diabetes/"
+      "https://doctorsappointment-9ogk.onrender.com/catagory/Diabetes/"
     );
     const diabetesResponseData = await diabetesresponse.json();
     console.log("doctorsResponseData", diabetesResponseData.doctors);
