@@ -159,7 +159,9 @@ export default function Doctors() {
               ))}
             </div>
           ) : (
-            <div className="mt-5">There is no doctors</div>
+            <div class="h-screen mt-5 mx-auto relative w-12 rounded-full">
+    <div class=" w-12 aspect-square  rounded-full border-8 border-blue-300 border-r-orange-400 animate-l2"></div>
+  </div>
           )}
         </div>
       </Layout>

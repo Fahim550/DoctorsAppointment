@@ -27,7 +27,15 @@ module.exports = {
           'carousel1': "url('./src/assets/doctors.jpg')",
           'carousel1': "url('./src/assets/doctors2.jpg')",
           
-        }
+        },
+        keyframes: {
+          l2: {
+            to: { transform: 'rotate(1turn)' },
+          },
+        },
+        animation: {
+          l2: 'l2 1s infinite linear',
+        },
       
     },
   },
