@@ -37,7 +37,7 @@ export default function Testimonial() {
           <Avatar
             rounded
             size="xs"
-            img="/images/people/profile-picture-5.jpg"
+            img="https://i.pinimg.com/originals/e6/30/3d/e6303d720e94a087c39bd4056655a6be.jpg"
             alt="profile picture"
           />
           <div className="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
@@ -70,7 +70,7 @@ export default function Testimonial() {
           <Avatar
             rounded
             size="xs"
-            img="/images/people/profile-picture-5.jpg"
+            img="https://tse3.mm.bing.net/th?id=OIP.SMMeMmpl3XaKrsSfP9peNQHaLG&pid=Api&P=0&h=220"
             alt="profile picture"
           />
           <div className="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">

@@ -128,7 +128,8 @@ export default function DoctorsTeam() {
         </div>
 
         <Swiper
-          slidesPerView={3}
+          slidesPerView={1}
+          sm:slidesPerView={3}
           spaceBetween={30}
           pagination={{
             clickable: true,

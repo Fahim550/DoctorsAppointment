@@ -9,6 +9,7 @@ import Footer from '../shared/footer/Footer'
 import Layout from '../client/layout/Layout'
 
 export default function Home() {
+  
   return (
     <div>
         {/* <Navbars/> */}

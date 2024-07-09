@@ -145,6 +145,7 @@ export default function Navbars() {
 
       <Navbar fluid rounded className="w-screen">
         <Navbar.Brand >
+          <Link to={'/'} className="flex">
           <img
             src={logo}
             className="h-12 sm:h-12"
@@ -153,6 +154,8 @@ export default function Navbars() {
           <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
           ZocDoc
           </span>
+          </Link>
+          
         </Navbar.Brand>
         <div className="flex  md:order-2 mr-6 space-x-4">
           {sessionStorage.getItem("email") || sessionStorage.getItem("Adminemail")?(
@@ -183,9 +186,9 @@ export default function Navbars() {
             <Link to="/login" className="bg-blue-700 text-white font-semibold rounded-lg p-1.5 hover:bg-blue-500">Login</Link>
           )}
           
-          <Navbar.Toggle />
+          <Navbar.Toggle className="md:hidden "/>
         </div>
-        <div className="flex  space-x-8">
+        <div className="flex space-x-8">
           <Navbar.Collapse>
             <Link to="/" active>
               Home

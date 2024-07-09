@@ -12,10 +12,10 @@ export default function HeroSection() {
   return (
     <div className="h-[550px] ">
       <Carousel>
-        <div className="relative flex h-full items-center justify-center ">
+        <div className="relative flex h-screen items-center justify-center ">
           <img
             src={carousel1}
-            className="h-screen
+            className="h-5/6 sm:h-full
           w-full opacity-50"
             alt=""
             data-aos="zoom-in"
@@ -26,19 +26,19 @@ export default function HeroSection() {
             // data-aos="fade-right"
             // data-aos-duration="3000"
           >
-            <h2 className="text-6xl text-white font-extrabold p-3 drop-shadow-2xl font-sans justify-center items-center">
+            <h2 className="text-2xl sm:text-6xl text-white font-extrabold p-3 drop-shadow-2xl font-sans justify-center items-center">
               Let's Find <br />
               Your Best Doctor
             </h2>
-            <button className="bg-blue-800 px-3 py-2 rounded-xl text-white text-lg mr-4 justify-center hover:bg-blue-950">
+            <button className="bg-blue-800 w-32 sm:w-40 px-3 sm:py-2 rounded-xl text-white text-lg mr-4 justify-center hover:bg-blue-950">
               Discover more
             </button>
           </div>
         </div>
-        <div className="relative flex h-full items-center justify-center ">
+        <div className="relative flex h-screen items-center justify-center ">
           <img
             src={carousel2}
-            className="h-screen
+            className="h-5/6 sm:h-full
             w-full "
             alt=""
           />
@@ -47,32 +47,16 @@ export default function HeroSection() {
             // data-aos="fade-right"
             // data-aos-duration="3000"
           >
-            <h2 className="text-6xl text-white font-extrabold p-3 drop-shadow-2xl  font-sans justify-center items-center">
+            <h2 className="text-2xl sm:text-6xl text-white font-extrabold p-3 drop-shadow-2xl  font-sans justify-center items-center">
               Your Health <br />
               Is Our Priority
             </h2>
-            <button className="bg-blue-800 px-3 py-2 rounded-xl text-white text-lg mr-4 justify-center hover:bg-blue-950">
+            <button className="bg-blue-800 w-32 sm:w-40 px-3 sm:py-2 rounded-xl text-white text-lg mr-4 justify-center hover:bg-blue-950">
               Discover more
             </button>
           </div>
         </div>
-        {/* <div className="relative flex h-full items-center justify-center ">
-          <img
-            src={carousel3}
-            className="h-full
-          w-full opacity-35"
-            alt=""
-          />
-          <div className="absolute w-8/12 " data-aos="fade-right" data-aos-duration="3000">
-            <h2 className="text-6xl text-blue-900 font-extrabold p-3 drop-shadow-2xl font-sans justify-center items-center">
-              Your Health <br />
-              Is Our Priority
-            </h2>
-            <button className="bg-blue-800 px-3 py-2 rounded-xl text-white text-lg mr-4 justify-center hover:bg-blue-950">
-              Discover more
-            </button>
-          </div>
-        </div> */}
+       
       </Carousel>
     </div>
   );

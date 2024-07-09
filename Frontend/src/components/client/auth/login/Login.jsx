@@ -25,7 +25,7 @@ export default function Login() {
         data.email == "admin123@gmail.com" &&
         data.password == "admin123"
       ) {
-        console.log("Response Data : ", data);
+        // console.log("Response Data : ", data);
         sessionStorage.setItem("Adminemail", data.email);
         navigate("/dashboard");
       } else if (response.code == 200 && data.email) {
